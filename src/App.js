@@ -20,15 +20,17 @@ function App() {
         <div className="item">
           <img src={film3} alt="Nausicaa" />
         </div>
+      </div>
+      <div className="container">
         <div className="item">
-          <img src={film4} alt="Mary" />
-        </div>
-        <div className="item">
-          <img src={film5} alt="Ponyo" />
-        </div>
-        <div className="item">
-          <img src={film6} alt="Whisper" />
-        </div>
+            <img src={film4} alt="Mary" />
+          </div>
+          <div className="item">
+            <img src={film5} alt="Ponyo" />
+          </div>
+          <div className="item">
+            <img src={film6} alt="Whisper" />
+          </div>
       </div>
   </div>
   );
