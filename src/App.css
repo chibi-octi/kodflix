@@ -1,13 +1,25 @@
 .container {
-  color: blue;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
 }
 
-img {
+.item img {
   width: 100%;
 }
 
-.item {
+/*media quary*/
+@media only screen and (max-width: 599px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .item {
+    flex: 1;
+    padding: 20px;
+  }
 }
