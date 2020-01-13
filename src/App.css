@@ -1,10 +1,32 @@
 .container {
   display: flex;
+  position: relative;
+}
+
+.resize {
+  height: 99%;
+}
+
+.item {
+  position: relative;
 }
 
 .item img {
   width: 100%;
 }
+
+.title-box {
+  position: absolute;
+  background-color: yellow;
+  text-align: center;
+  margin: 0px;
+  opacity: 0;
+}
+
+.item:hover .title-box {
+  opacity: 1;
+}
+
 
 /*media quary*/
 @media only screen and (max-width: 599px) {
@@ -16,6 +38,8 @@
     padding: 8px;
   }
 }
+
+
 
 @media only screen and (min-width: 600px) {
   .item {

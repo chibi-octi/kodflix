@@ -11,28 +11,36 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        
         <div className="item">
-          <img src={film1} alt="Sprited away" />
+          <div className="title-box">
+            <h3>Title of film</h3>
+          </div>
+          <img className="resize" src={film1} alt="Sprited away" />
+    </div>
+
+        <div className="item">
+          <img className="resize" src={film2} alt="Arrietty" />
         </div>
         <div className="item">
-          <img src={film2} alt="Arrietty" />
-        </div>
-        <div className="item">
-          <img src={film3} alt="Nausicaa" />
+          <img className="resize" src={film3} alt="Nausicaa" />
         </div>
       </div>
 
       <div className="container">
         <div className="item">
-          <img src={film4} alt="Mary" />
+          <img className="resize" src={film4} alt="Mary" />
         </div>
         <div className="item">
-          <img src={film5} alt="Ponyo" />
+          <img className="resize" src={film5} alt="Ponyo" />
         </div>
         <div className="item">
-          <img src={film6} alt="Whisper" />
+          <img className="resize" src={film6} alt="Whisper" />
         </div>
       </div>
+
+      
+      
     </div>
   );
 }
