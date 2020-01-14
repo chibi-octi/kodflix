@@ -1,4 +1,5 @@
 import React from 'react';
+import Animation from './components/Animation';
 import film1 from './images/film-spirited.jpg';
 import film2 from './images/film-arrietty.jpg';
 import film3 from './images/film-nausicaa.jpg';
@@ -11,38 +12,20 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        
-        <div className="item">
-          <div className="title-box">
-            <h3>Title of film</h3>
-          </div>
-          <img className="resize" src={film1} alt="Sprited away" />
-    </div>
-
-        <div className="item">
-          <img className="resize" src={film2} alt="Arrietty" />
-        </div>
-        <div className="item">
-          <img className="resize" src={film3} alt="Nausicaa" />
-        </div>
+        <Animation name='Spirited Away' image={film1}/>
+        <Animation name='Arrietty' image={film2}/>
+        <Animation name='Nausicaa of the Valley of the Wind' image={film3}/>
       </div>
-
       <div className="container">
-        <div className="item">
-          <img className="resize" src={film4} alt="Mary" />
-        </div>
-        <div className="item">
-          <img className="resize" src={film5} alt="Ponyo" />
-        </div>
-        <div className="item">
-          <img className="resize" src={film6} alt="Whisper" />
-        </div>
+        <Animation name="Mary and the Witch\'s Flower" image={film4}/>
+        <Animation name='Ponyo' image={film5}/>
+        <Animation name='Whisper of the Heart' image={film6}/>
       </div>
 
-      
-      
     </div>
   );
 }
+
+
 
 export default App;

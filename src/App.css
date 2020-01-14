@@ -9,22 +9,27 @@
 
 .item {
   position: relative;
+  overflow: hidden;
 }
 
 .item img {
   width: 100%;
 }
 
-.title-box {
+.overlay {
+  transition: bottom cubic-bezier(0.61, -0.04, 0, 1.11) 1s;
   position: absolute;
-  background-color: yellow;
+  background-color: tomato;
   text-align: center;
-  margin: 0px;
-  opacity: 0;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.item:hover .title-box {
-  opacity: 1;
+.item:hover .overlay {
+  display: block;
+  bottom: 0px;
 }
 
 
