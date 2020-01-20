@@ -6,6 +6,7 @@ export default function Cards(props) {
         <img className="resize" src={props.image} alt={`Animation title ${props.name}`} />
         <div className="overlay">
           <h2>{props.name}</h2>
+          <h3>{props.rating}</h3>
         </div>
       </div>)
     };
