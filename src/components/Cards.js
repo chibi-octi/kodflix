@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Animation(props) {
+export default function Cards(props) {
     return (
       <div className="item">
         <img className="resize" src={props.image} alt={`Animation title ${props.name}`} />
