@@ -8,14 +8,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Router>
-      <h1 className="title">Kodflix</h1>
-        <Route exact path='/' component ={Gallery} />
-        <Route exact path='/:details' component ={Details} />
-      </Router> 
+        <Router>
+        <h1 className="title">Kodflix</h1>
+          <Route exact path='/' component ={Gallery} />
+          <Route exact path='/:details' component ={Details} />
+        </Router>
     </div>
   );
 }
+
+
 
 
 export default App;
