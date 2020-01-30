@@ -8,8 +8,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+          <h1 className="title">Kodflix</h1>
         <Router>
-        <h1 className="title">Kodflix</h1>
           <Route exact path='/' component ={Gallery} />
           <Route exact path='/:details' component ={Details} />
         </Router>

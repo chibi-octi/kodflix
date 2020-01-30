@@ -5,7 +5,6 @@ import galleryGet from './gallery-get';
 
 export default function Gallery() {
     return (
-    <div>
       <div className="gallery">
         {
           galleryGet().map( film => (
@@ -17,6 +16,5 @@ export default function Gallery() {
           ))
         }
       </div>
-    </div> 
     )
   };
