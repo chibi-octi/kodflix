@@ -1,0 +1,39 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    display: none;
+}
+
+.menu-link {
+    padding: 1.75em;
+}
+
+/*media quary*/
+@media only screen and (max-width: 599px) {
+    .menuMobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+  
+@media only screen and (min-width: 600px) and (max-width: 1007px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuMobile {
+        display: none;
+    }
+} 
+  
+@media only screen and (min-width: 1008px){
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuMobile {
+        display: none;
+    }
+} 
