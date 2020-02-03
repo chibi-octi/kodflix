@@ -7,7 +7,8 @@ export default function Card(props) {
       <Link to= {`/${props.id}`} className="item">
         <img src={props.image} alt={`Animation title ${props.name}`} />
         <div className="overlay">
-          <CardOverlay />
+          <CardOverlay name={props.name} rating={props.rating}/>
+          
         </div>
       </Link>
       )

@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from './Card';
-import galleryGet from './gallery-get';
+/* import Card from './Card';
+import galleryGet from './gallery-get'; */
 
 export default function Details() {
     return (
       <div className='container'>
         <div className='sections'>
           <div>
+            
             {/* {
               galleryGet().map( film => (
               <Card 
                 image={film.image} />
               ))
             } */}
+
             <h1>Welcome to the details page</h1>
             <Link to='/' >Back to homepage</Link>
           </div>
