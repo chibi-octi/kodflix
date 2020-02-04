@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './Card';
-import galleryGet from './gallery-get';
+import Card from '../Card/Card';
+import galleryGet from '../gallery-get';
 
 
 export default function Gallery() {

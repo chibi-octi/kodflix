@@ -1,4 +1,5 @@
 import React from 'react';
+import './CardOverlay.css';
 
 
 export default function CardOverlay(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CardOverlay from './CardOverlay';
+import CardOverlay from '../CardOverlay/CardOverlay';
 
 export default function Card(props) {
     return (

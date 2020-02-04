@@ -1,0 +1,18 @@
+.overlay {
+    transition: bottom cubic-bezier(0.61, -0.04, 0, 1.11) 1s;
+    position: absolute;
+    background-color: orange;
+    text-align: center;
+    color: black;
+    bottom: -200px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .item:hover .overlay {
+    display: block;
+    bottom: 0px;
+  }
