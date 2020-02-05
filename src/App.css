@@ -46,6 +46,14 @@ img {
 
 /*media quary*/
 @media only screen and (max-width: 599px) {
+  .container {
+    padding: 0 1em;
+  }
+
+  .sections {
+    padding: 20px 0px;
+  }
+
   .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -59,6 +67,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1em;
+    padding: 0 20px;
+  }
+
+  .sections {
+    padding: 20px 0px;
   }
   
   .gallery {
@@ -79,6 +92,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 1em;
+    padding: 0 20px;
+  }
+
+  .sections {
+    padding: 20px 0px;
   }
   
   .gallery {

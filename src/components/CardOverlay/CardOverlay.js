@@ -6,8 +6,8 @@ export default function CardOverlay(props) {
     return  (
       <div className="overlay">
         <div>
-          {props.name},
-          {props.rating}
+          <h2>{props.name}</h2>
+          <h3>{props.rating}</h3>
         </div>
       </div>
     )

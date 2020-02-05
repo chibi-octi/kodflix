@@ -5,7 +5,6 @@ import Gallery from './components/Gallery/Gallery';
 import Details from './pages/Details';
 import Menu from './components/Menu/Menu';
 
-
 function App() {
   return (
     <div className="App">
@@ -16,7 +15,7 @@ function App() {
         <Menu />
           <Switch>
             <Route exact path='/' component={Gallery} />
-            <Route exact path='/:details' component={Details} />
+            <Route exact path='/:filmId' component={Details} />
           </Switch>
         </Router>
       </div>
