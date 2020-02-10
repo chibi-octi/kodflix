@@ -8,7 +8,6 @@ export default function Card(props) {
         <img src={props.image} alt={`Animation title ${props.name}`} />
         <div className="overlay">
           <CardOverlay name={props.name} rating={props.rating}/>
-          
         </div>
       </Link>
       )

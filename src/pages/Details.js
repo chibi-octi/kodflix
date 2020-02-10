@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import galleryGet from '../components/gallery-get';
 import './Details.css';
 
@@ -20,28 +20,32 @@ export default class Details extends Component {
     }
 
     render() {
-      return (
-        <div className='container'>
-          <div className='sections'>
-            <div>         
-              
-              <img src={this.state.film.image} alt={this.state.film.name} />
-              <Link to='/' >Back to homepage</Link>
-              
-            </div>
+      if(this.state.film === undefined) {
+        return <Redirect to='/not-found' />;
+      } else {
+        return (
+          <div className='container'>
+
+              <div className='sections'>
+                <div>
+                  <h1>{this.state.film.name}</h1>
+                </div>
+                <div>         
+                  <img src={this.state.film.image} alt={this.state.film.name} />
+                  <Link to='/' >Back to homepage</Link>
+                </div>
+              </div>
+
+              <div className='sections'>
+                <h2>Synopsis</h2>
+                <p>{this.state.film.synopsis}</p>
+                <div>{this.state.film.video}</div>
+                <CaptureUserEvent />
+              </div>
           </div>
-  
-          <div className='sections'>
-            <h1>{this.state.film.name}</h1>
-            <CaptureUserEvent />
-          </div>
-  
-        </div>
-      );
+        )};
     }
-
-
-  }
+ }
 
 //Button
 class CaptureUserEvent extends React.Component {
