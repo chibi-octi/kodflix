@@ -1,7 +1,43 @@
-
-
 .clickMe {
     background-color: blue;
     height: 44px;
 }
 
+/*media quary*/
+@media only screen and (max-width: 599px) {
+    .container {
+      padding: 0 1em;
+    }
+  
+    .sections {
+      padding: 20px 0px;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 1007px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 1em;
+      padding: 0 20px;
+    }
+  
+    .sections {
+      padding: 20px 0px;
+    }
+    
+  } 
+  
+  @media only screen and (min-width: 1008px){ 
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 1em;
+      padding: 0 20px;
+    }
+  
+    .sections {
+      padding: 20px 0px;
+    }
+  } 

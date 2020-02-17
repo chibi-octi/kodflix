@@ -1,10 +1,10 @@
 import React from 'react';
-import film1 from '../images/film-spirited.jpg';
-import film2 from '../images/film-arrietty.jpg';
-import film3 from '../images/film-nausicaa.jpg';
-import film4 from '../images/film-mary.jpg';
-import film5 from '../images/film-ponyo.jpg';
-import film6 from '../images/film-whisper.jpg';
+import film1 from '../images/film/film-spirited.jpg';
+import film2 from '../images/film/film-arrietty.jpg';
+import film3 from '../images/film/film-nausicaa.jpg';
+import film4 from '../images/film/film-mary.jpg';
+import film5 from '../images/film/film-ponyo.jpg';
+import film6 from '../images/film/film-whisper.jpg';
 
 export default function getGallery() {
   return [

@@ -13,6 +13,7 @@ function App() {
         <h1 className="title">Kodflix</h1>
         
         <Router>
+        
         <Menu />
           <Switch>
             <Route exact path='/' component={Gallery} />
@@ -24,8 +25,5 @@ function App() {
     </div>
   );
 }
-
-
-
 
 export default App;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import galleryGet from '../components/gallery-get';
+import galleryGet from '../frontend/components/gallery-get';
 import './Details.css';
 
 
