@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import galleryGet from '../frontend/components/gallery-get';
 import './Details.css';
+import './components/Button/Button.css';
 
 
 export default class Details extends Component {
@@ -32,7 +33,7 @@ export default class Details extends Component {
                 </div>
                 <div>         
                   <img src={this.state.film.image} alt={this.state.film.name} />
-                  <Link to='/' >Back to homepage</Link>
+                  <Link className="btn" to='/' >Back to homepage</Link>
                 </div>
               </div>
 

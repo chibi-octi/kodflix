@@ -1,0 +1,10 @@
+.header {
+    margin: 0 auto;
+    padding: 1em 0em;
+    text-transform: uppercase; 
+    ;
+}
+
+.header h1 {
+    text-align: center;
+}

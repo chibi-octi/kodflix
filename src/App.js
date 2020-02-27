@@ -10,15 +10,14 @@ function App() {
   return (
     <div className="App app-background">
       <div className='body'>
-        <h1 className="title">Kodflix</h1>
-        
-        <Router>
-        
-        <Menu />
+        <Router >
+          <Menu />
           <Switch>
-            <Route exact path='/' component={Gallery} />
-            <Route exact path='/not-found' component={NotFound} />
-            <Route exact path='/:filmId' component={Details} />
+            <div className="switch-section">
+              <Route className="route-section" exact path='/' component={Gallery} />
+              <Route exact path='/not-found' component={NotFound} />
+              <Route exact path='/:filmId' component={Details} />
+            </div>
           </Switch>
         </Router>
       </div>

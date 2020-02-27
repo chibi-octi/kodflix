@@ -24,7 +24,7 @@ export default class Details extends Component {
         return <Redirect to='/not-found' />;
       } else {
         return (
-          <div className='container'>
+          <div className='container-details'>
 
               <div className='sections'>
                 <div>
@@ -36,7 +36,7 @@ export default class Details extends Component {
                 </div>
               </div>
 
-              <div className='sections'>
+              <div className='sections no2'>
                 <h2>Synopsis</h2>
                 <p>{this.state.film.synopsis}</p>
                 <div>
